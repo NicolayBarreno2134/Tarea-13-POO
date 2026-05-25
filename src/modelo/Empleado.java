@@ -15,6 +15,12 @@ abstract class Empleado {
         this.correo = correo;
     }
 
-    abstract void mostrarInformacion();
-    abstract double valorConsulta();
+    abstract double calcularPago();
+    public void mostrarInformacion() {
+        System.out.println("Cédula: " + cedula);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Teléfono: " + telefono);
+        System.out.println("Correo: " + correo);
+    }
 }
