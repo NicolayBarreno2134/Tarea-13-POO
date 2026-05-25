@@ -1,6 +1,6 @@
 package modelo;
 
-abstract class Empleado {
+public abstract class Empleado {
     private String cedula;
     private String nombre;
     private int edad;
@@ -15,7 +15,24 @@ abstract class Empleado {
         this.correo = correo;
     }
 
-    abstract double calcularPago();
+    public String getCedula() {
+        return cedula;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public String getTelefono() {
+        return telefono;
+    }
+    public String getCorreo() {
+        return correo;
+    }
+
+    public abstract double calcularPago();
+
     public void mostrarInformacion() {
         System.out.println("Cédula: " + cedula);
         System.out.println("Nombre: " + nombre);
